@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Oxygen', sans-serif;
+        }
+
+        h1, h4,
+        h6,
+        p {
+            margin: 0px;
+        }
+
+        p {
+            font-size: x-small;
+        }
+        body {
+            margin: 0;
+        }
+
+        #mainbox {
+            background-color: white;
+            background-image: linear-gradient(hsl(240, 100%, 10%),
+                    hsl(240, 100%, 25%));
+            border-radius: 10px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #imagebox {
+            background-image: url("https://static.wixstatic.com/media/6435b6_c1158f35dad54152afc81f10429b4ea5~mv2.png");
+            background-size: contain;
+        }
+
+        #logo{
+            text-align: center;
+            float: right;
+            margin: 20px;
+            padding: 8px 10px 5px 10px;
+            border-radius: 20px;
+            border-bottom-right-radius: 0;
+            font-family: 'Syncopate', cursive;
+            font-size: large;
+            font-weight: 700;
+            color: white;
+            background-color: #b54b38;
+            position: relative;
+        }
+
+        #tagline {
+            margin-top: 0px;
+            color: black;
+        }
+
+        header {
+            /* #d8e8dc; */
+            display: inline-block;
+        }
+
+        section {
+            position: relative;
+            display: inline-block;
+            width: calc(100% - 40px);
+            background-color: white;
+            border-radius: 10px;
+            margin: 0 20px 20px 20px;
+        }
+
+        .crest {
+            width: 25px;
+            height: 25px;
+            margin: 0 10px;
+        }
+
+        .teamname {
+            line-height: 25px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        #score {
+            margin: auto;
+        }
+
+        #scoreline {
+            margin: 10px 80px;
+            display: flex;
+        }
+
+        #scorelinewrapper {
+            display: inline-block;
+            width: 100%;
+            background-color: hsl(0, 0%, 87%);
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        #stats {
+            display: flex;
+        }
+
+        #teaminfo {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        #livestats {
+            width: 100%;
+            border-left: 2px solid hsl(0, 0%, 87%);
+            border-bottom: 2px solid hsl(0, 0%, 87%);
+            text-align: center;
+        }
+
+        .livestatsrow {
+            display: flex;
+            margin: 5px;
+        }
+
+        .livestatsrow .livestatname {
+            margin: 0 auto;
+        }
+
+        #livestats img {
+            width: 50%;
+            float: initial;
+        }
+
+        #time {
+            text-align: center;
+            margin: 0 0 auto 0;
+        }
+
+        #teaminfo h6 {
+            text-align: center;
+            margin: auto 0 0 0;
+        }
+
+        #teaminfo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .playerrow {
+            display: flex;
+            padding: 5px;
+            border-bottom: 2px solid hsl(0, 0%, 87%);
+        }
+
+        .playerrow img {
+            width: 30px;
+            height: 30px;
+            background-color: hsl(0, 100%, 95%);
+            border-radius: 50%;
+            object-fit:cover;
+        }
+
+        .spacer {
+            width: 100%;
+        }
+
+        .playerdetails {
+            width: 100%;
+            margin: 0;
+        }
+
+        .playerdetails p {
+            text-align: center;
+        }
+        .wagerbutton {
+            width: calc(50% - 2px);
+            border: 1px solid #b54b38;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: white;
+            color: #b54b38;
+        }
+        /* .wagerbutton:hover {
+            color: white;
+            background-color: green;
+        }
+        .wagerbutton:focus {
+            color: white;
+            background-color: green;
+        } */
+        #wagersubmit {
+            display: flex;
+        }
+        #wagerselector {
+            width: 100%;
+            padding: 4px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        #betsubmit {
+            display: flex;
+            flex-direction: column;
+  justify-content: center;
+  align-content: center;
+            width: 100%;
+        }
+        #betsubmit button {
+            height: calc(100% - 12px);
+            margin: 2px 4px 4px 0px;
+            background-color: black;
+            color: white;
+            font-size: medium;
+            padding: 0;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+
+        #betsubmit h4 {
+            height: 100%;
+            text-align: center;
+            position: relative;
+            top: 15%;
+        }
+        
+        #betsubmit p {
+            position: relative;
+            width: 0px;
+            height: 0px;
+            background-color: #b54b38;
+            top: 4px;
+            left: 4px;
+            color: hsl(0, 0%, 20%);
+        }
+        
+        example-bet-selector {
+            --background-color: white;
+            --box-color: hsl(0, 0%, 87%);
+            --text-highlight-color: #b54b38;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="mainbox">
+            <div id="imagebox">
+            <h1 id="logo">Quikbet.</h1>
+            <section>
+                <article id='scorelinewrapper'>
+                    <div id='scoreline'>
+                        <img class="crest"
+                            src="https://static.wixstatic.com/media/6435b6_72bb62e7a1ba43b88fc57d03069a1dba~mv2.png">
+                        <h5 class="teamname">LAL</h5>
+                        <h5 id="score">83 - 84</h5>
+                        <h5 class="teamname">DAL</h5>
+                        <img class="crest"
+                            src="https://static.wixstatic.com/media/6435b6_c71d478552e9499c95933554115295fd~mv2.png">
+                    </div>
+                </article>
+                <article id="stats">
+                    <div id="teaminfo">
+                        <h6>Q4</h6>
+                        <h1 id="time">0:08</h1>
+                        <div class="playerrow">
+                            <img src="https://static.wixstatic.com/media/6435b6_d9621f833a3041158ad7a9e2d369bfbe~mv2.png">
+                            <div class="playerdetails">
+                                <p>James</p>
+                                <p class="homeplayerposition">F</p>
+                            </div>
+                            <div class="playerdetails">
+                                <p>F-Smith</p>
+                                <p class="awayplayerposition">F</p>
+                            </div>
+                            <img src="https://static.wixstatic.com/media/6435b6_b1b696e9c1564f72ab8cf45c77d8199b~mv2.png">
+                        </div>
+                        <div class="playerrow">
+                            <img src="https://static.wixstatic.com/media/6435b6_3bbab421bfbc4feba798ded1539a0cf6~mv2.png">
+                            <div class="playerdetails">
+                                <p>Monk</p>
+                                <p class="homeplayerposition">G</p>
+                            </div>
+                            <div class="playerdetails">
+                                <p>Brunsen</p>
+                                <p class="awayplayerposition">G</p>
+                            </div>
+                            <img src="https://static.wixstatic.com/media/6435b6_3dfadd1403774e71a32a76a41df97044~mv2.png">
+                        </div>
+                        <div class="playerrow">
+                            <img src="https://static.wixstatic.com/media/6435b6_1eeb841f1e93427baa69eed9f1c76c9e~mv2.png">
+                            <div class="playerdetails">
+                                <p>Westbrook</p>
+                                <p class="homeplayerposition">G</p>
+                            </div>
+                            <div class="playerdetails">
+                                <p>Powell</p>
+                                <p class="awayplayerposition">FC</p>
+                            </div>
+                            <img src="https://static.wixstatic.com/media/6435b6_4c5b5d19c1c34b91b3411867ccf77be6~mv2.png">
+                        </div>
+                        <div class="playerrow">
+                            <img src="https://static.wixstatic.com/media/6435b6_890ecd9100a642a1a2a2924f907504a4~mv2.png">
+                            <div class="playerdetails">
+                                <p>Howard</p>
+                                <p class="homeplayerposition">CF</p>
+                            </div>
+                            <div class="playerdetails">
+                                <p>Bullock</p>
+                                <p class="awayplayerposition">GF</p>
+                            </div>
+                            <img src="https://static.wixstatic.com/media/6435b6_3a4bdeb5d9fa4d6cb18ca605b250788c~mv2.png">
+                        </div>
+                        <div class="playerrow">
+                            <img src="https://static.wixstatic.com/media/6435b6_37b0ce5b02ef4ec5bb4f09e50dabc23d~mv2.png">
+                            <div class="playerdetails">
+                                <p>H-Tucker</p>
+                                <p class="homeplayerposition">G</p>
+                            </div>
+                            <div class="playerdetails">
+                                <p>Ntilikina</p>
+                                <p class="awayplayerposition">FT</p>
+                            </div>
+                            <img src="https://static.wixstatic.com/media/6435b6_99edd85db4234da9a4080957313e3404~mv2.png">
+                        </div>
+                    </div>
+                    <div id="livestats">
+                        <div class="livestatsrow">
+                            <p>3</p>
+                            <p class="livestatname">3 Pointers</p>
+                            <p>5</p>
+                        </div>
+                        <div class="livestatsrow">
+                            <p>30</p>
+                            <p class="livestatname">2 Pointers</p>
+                            <p>28</p>
+    
+                        </div>
+                        <div class="livestatsrow">
+                            <p>14/15</p>
+                            <p class="livestatname">Free Throws</p>
+                            <p>13/20</p>
+    
+                        </div>
+                        <div class="livestatsrow">
+                            <p>12</p>
+                            <p class="livestatname">Fouls</p>
+                            <p>13</p>
+    
+                        </div>
+                        <img src="https://static.wixstatic.com/media/6435b6_4d95e4a4b6994c21b890fbcf76d0350f~mv2.png">
+                    </div>
+                </article>
+                <example-bet-selector id="betselector" usestylesheets></example-bet-selector>
+                <article id="wagersubmit">
+                    <div id="wagerselector">
+                    <button class="wagerbutton">$2</button>
+                    <button class="wagerbutton">$5</button>
+                    <button class="wagerbutton">$10</button>
+                    <button class="wagerbutton">$20</button>
+                </div>
+                <div id="betsubmit">
+                    <p>Winnings</p>
+                    <h4 id="winnings">$0</h4>
+                    <button id="submitbutton" onclick="submitBet()">Submit Bet</button>
+                </div>
+                </article>
+            </section>
+        </div>
+        </div>
+        <script type="module" src="./node_modules/@gameplai/example-bet-selector/example_bet_selector.js"></script>
+        <script>
+            window.onload = () => {
+                console.log('LOADED!!');
+                const urlSearchParams = new URLSearchParams(window.location.search);
+                const params = Object.fromEntries(urlSearchParams.entries());
+                console.log(params);
+            };
+            document.getElementById('betselector').onBetSelected = (betId, optionId, odds, subOptionId, player) => {
+                console.log('On Bet selected!');
+                console.log(betId);
+                console.log(optionId);
+                console.log(odds);
+                console.log(subOptionId);
+                console.log(player);
+                currentodds = odds;
+                checkSelections();
+            }; 
+            let currentwager = null;
+            let currentodds = null;
+            let loading = false;
+            function checkSelections() {
+                console.log('Check Selections');
+                console.log(currentwager);
+                if (currentwager && currentodds) {
+                    console.log('selection valid!');
+                    document.getElementById('submitbutton').style.background = '#b54b38';
+                    document.getElementById('submitbutton').style.border = 'none';
+                    let wager = parseInt(currentwager.substring(1));
+                    let odds = parseFloat(currentodds);
+                    let winnings = Math.round(wager * odds * 100) / 100;
+                    document.getElementById('winnings').innerText = '$' + winnings;
+                }
+            }
+            let wagerbuttons = document.getElementsByClassName('wagerbutton');
+            console.log(`Number of buttons ${wagerbuttons.length}`);
+            for (let i = 0; i < wagerbuttons.length; i++){
+                wagerbuttons[i].onclick = () => {
+                    console.log('Clicky!');
+                    console.log(wagerbuttons[i].innerText);
+                    currentwager = wagerbuttons[i].innerText;
+                    checkSelections();
+                    for (let j = 0; j < wagerbuttons.length; j++) {
+                        wagerbuttons[j].style.background = 'white';
+                        wagerbuttons[j].style.color = '#b54b38';
+                    }
+                    wagerbuttons[i].style.background = '#b54b38';
+                    wagerbuttons[i].style.color = 'white';
+                };
+            }
+    
+            function timeout(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    async function sleep() {
+        await timeout(500);
+        return;
+    }
+    
+            async function submitBet() {
+                console.log('Submitting Bet!');
+                if (currentodds && currentwager && !loading) {
+                    loading = true;
+                    let button = document.getElementById('submitbutton');
+                    button.style.backgroundColor = "#b5b138";
+                    button.innerText = "Submitting.";
+                    await sleep();
+                    button.innerText = "Submitting..";
+                    await sleep();
+                    button.innerText = "Submitting...";
+                    await sleep();
+                    button.innerText = "Submitting.";
+                    await sleep();
+                    button.innerText = "Submitting..";
+                    await sleep();
+                    button.innerText = "Submitting...";
+                    await sleep();
+                    button.innerText = "Submitted!";
+                    button.style.backgroundColor = "#4bba3a";
+                    await sleep();
+                    await sleep();
+                    await sleep();
+                    await sleep();
+                    button.style.backgroundColor = "black";
+                    button.innerText = 'Submit';
+                    currentodds = null;
+                    currentwager = null;
+                    loading = false;
+                }
+            }
+            // var interval = setInterval(()=>{
+            //     console.log('TIMER!');
+            //     let time = document.getElementById('time').innerText;
+            //     console.log(time.split(':'));
+            //     let parts = time.split(':');
+            //     console.log(parseInt(parts[1]) + 1);
+            //     var newMinute = parts[0];
+            //     let newSecond = parseInt(parts[1]) + 1;
+            //     if (newSecond === 60) {
+            //         newSecond = '00';
+            //         newMinute = parseInt(parts[0]) + 1;
+            //         if (newMinute === 12) {
+            //             clearInterval(interval);
+            //         }
+            //     } else if (newSecond < 10) {
+            //         newSecond = '0' + newSecond;
+            //     }
+            //     document.getElementById('time').innerText = newMinute + ':' + newSecond;
+            // }, 1000);
+        </script>
+    </body>
+</html>

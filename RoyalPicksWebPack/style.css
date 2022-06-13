@@ -1,0 +1,251 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h4, h5,
+h6,
+p {
+    margin: 0px;
+    color: white;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+p {
+    font-size: x-small;
+    color: white;
+}
+body {
+    margin: 0;
+}
+
+#mainbox {
+    background-color: #2b2a2c;
+    /* background-image: linear-gradient(hsl(240, 100%, 10%),
+            hsl(240, 100%, 25%)); */
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#imagebox {
+    background-image: url("https://static.wixstatic.com/media/6435b6_c1158f35dad54152afc81f10429b4ea5~mv2.png");
+    background-size: contain;
+}
+
+#icon {
+    /* margin: 10px auto; */
+    padding: 20px;
+    height: 80px;
+    width: 100%;
+    display: block;
+    background-color: white;
+}
+
+#tagline {
+    margin-top: 0px;
+    color: black;
+}
+
+header {
+    /* #d8e8dc; */
+    display: inline-block;
+}
+
+section {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    margin: 0 20px 20px 20px;
+}
+
+.crest {
+    height: 25px;
+    width: 25px;
+    margin: 0 10px;
+    border: 1px solid #1b1b1b;
+    border-radius: 100px;
+    background-color: #1b1b1b;
+}
+
+.teamname {
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#score {
+    margin: auto;
+}
+
+#scoreline {
+    margin: 10px 80px;
+    display: flex;
+}
+
+#scoreline h5 {
+    color: black;
+}
+
+#scorelinewrapper {
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    /* background-color: #293142; */
+    /* background-image: linear-gradient(90deg,
+       #fdb927 -10%, 
+       #293142 20%, 
+       #293142 80%,
+       #ce1141 110%);
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px black; */
+    margin-top: 10px;
+}
+
+#stats {
+    display: flex;
+    margin-top: 0px;
+}
+
+#teaminfo {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#livestats {
+    width: 100%;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+.livestatsrow {
+    display: flex;
+    margin: 5px;
+}
+
+.livestatsrow .livestatname {
+    margin: 0 auto;
+}
+
+#livestats img {
+    width: 40%;
+    float: initial;
+}
+
+#time {
+    text-align: center;
+    margin: 0 0 auto 0;
+}
+
+#teaminfo h6 {
+    text-align: center;
+    margin: auto 0 0 0;
+}
+
+#teaminfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.playerrow {
+    display: flex;
+    padding-top: 5px;
+    border-bottom: 2px solid white;
+}
+
+.playerrow img {
+    width: 40px;
+    height: 30px;
+    /* background-color: #293142;
+    border-radius: 50%; */
+    object-fit:cover;
+}
+
+.spacer {
+    width: 100%;
+}
+
+.playerdetails {
+    width: 100%;
+    margin: 0;
+}
+
+.playerdetails p {
+    text-align: center;
+}
+.wagerbutton {
+    width: 25%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    color: #1b1b1b;
+}
+#wagersubmit {
+    display: flex;
+}
+#wagerselector {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0px;
+    padding: 10px;
+    padding-top: 0px;
+    background-color: white;
+    /* border: 1px solid white;
+    background-color: white; */
+}
+#wagerselector h1 {
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+#betsubmit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#submitbutton {
+    width: 100%;
+    margin: 0px;
+    margin-top: 5px;
+    background-color: #53d337;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: medium;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#betsubmit h4 {
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: 15%;
+    padding: auto;
+    font-size: 30px;
+}
+
+#betsubmit p {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    top: 4px;
+    left: 4px;
+}
+
+bet-selector {
+    color: white;
+    background-color: 1d1c1e;
+    font-size: 30px;
+    border-radius: 0px;
+    --box-color: #2b2a2c;
+    --text-highlight-color: #f3601b;
+    --odds-font-size: 40px;
+}

@@ -1,0 +1,485 @@
+{
+  "basketball": [
+    {
+      "period": {
+        "3RD-Quarter": " 3Q",
+        "1ST-Quarter": " 1Q",
+        "4TH-Quarter": " 4Q",
+        "2ND-Quarter": " 2Q"
+      },
+      "question": {
+        "default": {
+          "beginning": "Who will be ",
+          "focus": "winning",
+          "end": "?"
+        },
+        "4TH-Quarter": {
+          "beginning": "Who will ",
+          "focus": "win",
+          "end": "?"
+        }
+      },
+      "betslipSuffix": {
+        "default": "To be winning",
+        "4TH-Quarter": "To win"
+      },
+      "requestId": "3Way",
+      "show": false,
+      "options": [
+        {
+          "id": "win",
+          "matchId": "HOME TEAM"
+        },
+        {
+          "name": "Neither",
+          "id": "draw"
+        },
+        {
+          "id": "loss",
+          "matchId": "AWAY TEAM"
+        }
+      ],
+      "id": "wdl"
+    },
+    {
+      "period": {
+        "3RD-Quarter": "",
+        "1ST-Quarter": "",
+        "4TH-Quarter": "",
+        "2ND-Quarter": ""
+      },
+      "question": {
+        "default": {
+          "beginning": "What will home team's ",
+          "focus": "next basket ",
+          "end": "be?"
+        }
+      },
+      "requestId": "Next Bucket",
+      "betslipSuffix": {
+        "default": "Home team's next basket"
+      },
+      "options": [
+        {
+          "name": "Free Throw",
+          "id": "ft"
+        },
+        {
+          "name": "2 pts",
+          "id": "2pt"
+        },
+        {
+          "name": "3 pts",
+          "id": "3pt"
+        }
+      ],
+      "subOptions": [
+        {
+          "name": "",
+          "id": "home"
+        }
+      ],
+      "id": "next_bucket"
+    },
+    {
+      "period": {
+        "3RD-Quarter": "",
+        "4TH-Quarter": "",
+        "1ST-Quarter": "",
+        "2ND-Quarter": ""
+      },
+      "question": {
+        "default": {
+          "beginning": "What will away team's ",
+          "focus": "next basket ",
+          "end": "be?"
+        }
+      },
+      "requestId": "Next Bucket",
+      "betslipSuffix": {
+        "default": "Away team's next basket"
+      },
+      "options": [
+        {
+          "name": "Free Throw",
+          "id": "ft"
+        },
+        {
+          "name": "2 pts",
+          "id": "2pt"
+        },
+        {
+          "name": "3 pts",
+          "id": "3pt"
+        }
+      ],
+      "subOptions": [
+        {
+          "name": "",
+          "id": "away"
+        }
+      ],
+      "id": "next_bucket"
+    },
+    {
+      "baseValues": [
+        "3PTS HOME",
+        "3PTS AWAY"
+      ],
+      "period": {
+        "3RD-Quarter": " in 3Q",
+        "1ST-Quarter": " in 1Q",
+        "4TH-Quarter": " in 4Q",
+        "2ND-Quarter": " in 2Q"
+      },
+      "question": {
+        "default": {
+          "beginning": "What will be the ",
+          "focus": "total no. of 3-Pointers",
+          "end": "?"
+        }
+      },
+      "requestId": "over_under_3pts",
+      "betslipSuffix": {
+        "default": "Total 3-pointers"
+      },
+      "options": [
+        {
+          "id": "1_5",
+          "value": 1.5
+        },
+        {
+          "id": "3_5",
+          "value": 3.5
+        },
+        {
+          "id": "5_5",
+          "value": 5.5
+        }
+      ],
+      "subOptions": [
+        {
+          "name": "Under",
+          "id": "under"
+        },
+        {
+          "name": "Over",
+          "id": "over"
+        }
+      ],
+      "isOverUnder": true,
+      "id": "over_under_3pts"
+    },
+    {
+      "enclosingOptions": [
+        "home",
+        "away"
+      ],
+      "isPlayerBet": true,
+      "period": {
+        "3RD-Quarter": "",
+        "4TH-Quarter": "",
+        "1ST-Quarter": "",
+        "2ND-Quarter": ""
+      },
+      "question": {
+        "default": {
+          "beginning": "What will ",
+          "focus": " next basket",
+          "end": " be?"
+        }
+      },
+      "requestId": "Next Bucket",
+      "betslipSuffix": {
+        "default": "player's next basket"
+      },
+      "options": [
+        {
+          "name": "Free Throw",
+          "id": "ft"
+        },
+        {
+          "name": "2 pts",
+          "id": "2pt"
+        },
+        {
+          "name": "3 pts",
+          "id": "3pt"
+        }
+      ],
+      "show": true,
+      "id": "next_bucket"
+    }
+  ],
+  "football": [
+    {
+      "period": {
+        "45-60": " before 60",
+        "30-45": " before 45",
+        "0-15": " before 15",
+        "75-90": "",
+        "15-30": " before 30",
+        "60-75": " before 75"
+      },
+      "question": {
+        "default": {
+          "beginning": "What will be the ",
+          "focus": "next event",
+          "end": "?"
+        }
+      },
+      "requestId": "next_event",
+      "betslipSuffix": {
+        "default": "Next Event"
+      },
+      "options": [
+        {
+          "name": "Corner",
+          "id": "corner"
+        },
+        {
+          "name": "Free Kick",
+          "id": "freekick"
+        },
+        {
+          "name": "Goal Kick",
+          "id": "goalkick"
+        },
+        {
+          "name": "Throw-In",
+          "id": "throwin"
+        }
+      ],
+      "id": "next_event"
+    },
+    {
+      "period": {
+        "45-60": " at 60'",
+        "30-45": " at HT",
+        "0-15": " at 15'",
+        "75-90": "",
+        "15-30": " at 30'",
+        "60-75": " at 75'"
+      },
+      "question": {
+        "default": {
+          "beginning": "Who will be ",
+          "focus": "winning",
+          "end": "?"
+        },
+        "75-90": {
+          "beginning": "Who will ",
+          "focus": "win",
+          "end": "?"
+        }
+      },
+      "requestId": "3Way",
+      "betslipSuffix": {
+        "default": "To be winning",
+        "75-90": "To win"
+      },
+      "show": false,
+      "options": [
+        {
+          "id": "win",
+          "matchId": "HOME TEAM"
+        },
+        {
+          "name": "Draw",
+          "id": "draw"
+        },
+        {
+          "id": "loss",
+          "matchId": "AWAY TEAM"
+        }
+      ],
+      "id": "wdl"
+    },
+    {
+      "period": {
+        "45-60": " before 60",
+        "30-45": " before HT",
+        "0-15": " before 15'",
+        "75-90": "",
+        "15-30": " before 30'",
+        "60-75": " before 75'"
+      },
+      "question": {
+        "default": {
+          "beginning": "Who will ",
+          "focus": "score next",
+          "end": "?"
+        }
+      },
+      "requestId": "Score Next",
+      "betslipSuffix": {
+        "default": "To score next"
+      },
+      "options": [
+        {
+          "id": "home",
+          "matchId": "HOME TEAM"
+        },
+        {
+          "name": "Neither",
+          "id": "none"
+        },
+        {
+          "id": "away",
+          "matchId": "AWAY TEAM"
+        }
+      ],
+      "id": "score_next"
+    },
+    {
+      "period": {
+        "45-60": " before 60'",
+        "30-45": " before HT",
+        "0-15": " before 15'",
+        "75-90": "",
+        "15-30": " before 30'",
+        "60-75": " before 75'"
+      },
+      "question": {
+        "default": {
+          "beginning": "Who will have the ",
+          "focus": "next shot on target",
+          "end": "?"
+        }
+      },
+      "betslipSuffix": {
+        "default": "Next shot on target"
+      },
+      "requestId": "Shot Next",
+      "options": [
+        {
+          "id": "home",
+          "matchId": "HOME TEAM"
+        },
+        {
+          "name": "Neither",
+          "id": "none"
+        },
+        {
+          "id": "away",
+          "matchId": "AWAY TEAM"
+        }
+      ],
+      "id": "to_shoot_next_on_target"
+    },
+    {
+      "baseValues": [
+        "FREE KICKS HOME",
+        "FREE KICKS AWAY"
+      ],
+      "period": {
+        "45-60": " at 60'",
+        "30-45": " at HT",
+        "0-15": " at 15'",
+        "75-90": "",
+        "15-30": " at 30'",
+        "60-75": " at 75'"
+      },
+      "question": {
+        "default": {
+          "beginning": "What will be the ",
+          "focus": "total no. of free kicks",
+          "end": "?"
+        }
+      },
+      "betslipSuffix": {
+        "default": "Total free kicks"
+      },
+      "requestId": "over_under_free_kick",
+      "subOptions": [
+        {
+          "name": "Under",
+          "id": "under"
+        },
+        {
+          "name": "Over",
+          "id": "over"
+        }
+      ],
+      "options": [
+        {
+          "id": "0_5",
+          "value": 0.5
+        },
+        {
+          "id": "1_5",
+          "value": 1.5
+        },
+        {
+          "id": "2_5",
+          "value": 2.5
+        }
+      ],
+      "isOverUnder": true,
+      "id": "over_under_free_kick"
+    },
+    {
+      "baseValues": [
+        "CORNERS HOME",
+        "CORNERS AWAY"
+      ],
+      "period": {
+        "45-60": " at 60'",
+        "30-45": " at HT",
+        "0-15": " at 15'",
+        "75-90": "",
+        "15-30": " at 30'",
+        "60-75": " at 75'"
+      },
+      "question": {
+        "default": {
+          "beginning": "What will be the ",
+          "focus": "total no. of corners",
+          "end": "?"
+        }
+      },
+      "requestId": "over_under_corners",
+      "betslipSuffix": {
+        "default": "Total corners"
+      },
+      "options": [
+        {
+          "id": "0_5",
+          "value": 0.5
+        },
+        {
+          "id": "1_5",
+          "value": 1.5
+        },
+        {
+          "id": "2_5",
+          "value": 2.5
+        }
+      ],
+      "subOptions": [
+        {
+          "name": "Under",
+          "id": "under"
+        },
+        {
+          "name": "Over",
+          "id": "over"
+        }
+      ],
+      "isOverUnder": true,
+      "id": "over_under_corners"
+    }
+  ],
+  "pause": {
+    "over_under_free_kicks": 1,
+    "next_bucket": 1,
+    "over_under_corners": 1,
+    "score_next": 1,
+    "to_shoot_next_on_target": 1,
+    "wdl": 1
+  },
+  "limits": {
+    "lower": null,
+    "upper": null
+  }
+}

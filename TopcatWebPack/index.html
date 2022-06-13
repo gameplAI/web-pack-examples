@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="mainbox">
+            <img id="icon" src="images/topcat_logo.png">
+            <h1 id="logo">TOPCAT FANTASY</h1>
+            <section>
+                <article id='scorelinewrapper'>
+                    <div id='scoreline'>
+                        <img class="crest"
+                            src="images/LAL.svg">
+                        <h5 class="teamname">LAL</h5>
+                        <h5 id="score">83 - 84</h5>
+                        <h5 class="teamname">HOU</h5>
+                        <img class="crest"
+                            src="images/HOU.svg">
+                    </div>
+                </article>
+                <article id="stats">
+                    <div id="teaminfo">
+                        <h6>Q4</h6>
+                        <h1 id="time">0:08</h1>
+                        <div class="playerrow">
+                            <img src="images/James.png">
+                            <div class="playerdetails">
+                                <p>James</p>
+                                <p class="homeplayerposition">F</p>
+                            </div>
+                            <div class="playerdetails">
+                                <p>Wood</p>
+                                <p class="awayplayerposition">F</p>
+                            </div>
+                            <img src="images/Wood.png">
+                        </div>
+                        <div class="playerrow">
+                            <img src="images/Monk.png">
+                            <div class="playerdetails">
+                                <p>Monk</p>
+                                <p class="homeplayerposition">G</p>
+                            </div>
+                            <div class="playerdetails">
+                                <p>Green</p>
+                                <p class="awayplayerposition">G</p>
+                            </div>
+                            <img src="images/Green.png">
+                        </div>
+                        <div class="playerrow">
+                            <img src="images/Westbrook.png">
+                            <div class="playerdetails">
+                                <p>Westbrook</p>
+                                <p class="homeplayerposition">G</p>
+                            </div>
+                            <div class="playerdetails">
+                                <p>Porter Jr.</p>
+                                <p class="awayplayerposition">GF</p>
+                            </div>
+                            <img src="images/Porter.png">
+                        </div>
+                        <div class="playerrow">
+                            <img src="images/Howard.png">
+                            <div class="playerdetails">
+                                <p>Howard</p>
+                                <p class="homeplayerposition">CF</p>
+                            </div>
+                            <div class="playerdetails">
+                                <p>Gordon</p>
+                                <p class="awayplayerposition">G</p>
+                            </div>
+                            <img src="images/Gordon.png">
+                        </div>
+                        <div class="playerrow">
+                            <img src="images/Tucker.png">
+                            <div class="playerdetails">
+                                <p>H-Tucker</p>
+                                <p class="homeplayerposition">G</p>
+                            </div>
+                            <div class="playerdetails">
+                                <p>Tate</p>
+                                <p class="awayplayerposition">F</p>
+                            </div>
+                            <img src="images/Tate.png">
+                        </div>
+                    </div>
+                    <div id="livestats">
+                        <div class="livestatsrow">
+                            <p>3</p>
+                            <p class="livestatname">3 Pointers</p>
+                            <p>5</p>
+                        </div>
+                        <div class="livestatsrow">
+                            <p>30</p>
+                            <p class="livestatname">2 Pointers</p>
+                            <p>28</p>
+    
+                        </div>
+                        <div class="livestatsrow">
+                            <p>14/15</p>
+                            <p class="livestatname">Free Throws</p>
+                            <p>13/20</p>
+    
+                        </div>
+                        <div class="livestatsrow">
+                            <p>12</p>
+                            <p class="livestatname">Fouls</p>
+                            <p>13</p>
+    
+                        </div>
+                        <img src="images/fakeshotmap.svg">
+                    </div>
+                </article>
+                <bet-selector
+                  id="betselector"
+                  height="200px"
+                  gameid="28810038"
+                  betid="next_bucket"
+                  usestylesheets
+                  target="away"></bet-selector>
+                <article id="wagersubmit">
+                    <div id="betsubmit">
+                        <p>Winnings</p>
+                        <h4 id="winnings">$0</h4>
+                        <!-- <button id="submitbutton" onclick="submitBet()">Submit Bet</button> -->
+                    </div>
+                    <div id="wagerselector">
+                    <button class="wagerbutton">$2</button>
+                    <button class="wagerbutton">$5</button>
+                    <button class="wagerbutton">$10</button>
+                    <button class="wagerbutton">$20</button>
+                    <button id="submitbutton" onclick="submitBet()">Submit Bet</button>
+                </div>
+                </article>
+            </section>
+        </div>
+        <script type="module" src="bet_selector/bet_selector.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

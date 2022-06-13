@@ -1,0 +1,231 @@
+{
+  "FREEZE": "false",
+  "next_bucket": {
+    "FREEZE": "false",
+    "away": {
+      "FREEZE": "false",
+      "2pt": {
+        "next_bucket_type_room_away_2": {
+          "odd": 1.6
+        }
+      },
+      "players": {
+        "LeBron James": {
+          "2pt": {
+            "next_bucket_type_room_player_2_start_a1": {
+              "odd": 1.84
+            }
+          },
+          "3pt": {
+            "next_bucket_type_room_player_3_start_a1": {
+              "odd": 5.95
+            }
+          },
+          "ft": {
+            "next_bucket_type_room_player_1_start_a1": {
+              "odd": 6.21
+            }
+          },
+          "miss": {
+            "next_bucket_type_room_player_0_start_a1": {
+              "odd": 7.87
+            }
+          }
+        },
+        "Russell Westbrook": {
+          "2pt": {
+            "next_bucket_type_room_player_2_start_a2": {
+              "odd": 1.91
+            }
+          },
+          "3pt": {
+            "next_bucket_type_room_player_3_start_a2": {
+              "odd": 6.8
+            }
+          },
+          "ft": {
+            "next_bucket_type_room_player_1_start_a2": {
+              "odd": 5.29
+            }
+          },
+          "miss": {
+            "next_bucket_type_room_player_0_start_a2": {
+              "odd": 7.14
+            }
+          }
+        }
+      },
+      "3pt": {
+        "next_bucket_type_room_away_3": {
+          "odd": 4.95
+        }
+      },
+      "ft": {
+        "next_bucket_type_room_away_1": {
+          "odd": 5.88
+        }
+      },
+      "miss": {
+        "next_bucket_type_room_away_0": {
+          "odd": 500.0
+        }
+      }
+    },
+    "home": {
+      "FREEZE": "false",
+      "2pt": {
+        "next_bucket_type_room_home_2": {
+          "odd": 1.67
+        }
+      },
+      "players": {
+        "Spencer Dinwiddie": {
+          "2pt": {
+            "next_bucket_type_room_player_2_start_h2": {
+              "odd": 2.17
+            }
+          },
+          "3pt": {
+            "next_bucket_type_room_player_3_start_h2": {
+              "odd": 5.78
+            }
+          },
+          "ft": {
+            "next_bucket_type_room_player_1_start_h2": {
+              "odd": 5.46
+            }
+          },
+          "miss": {
+            "next_bucket_type_room_player_0_start_h2": {
+              "odd": 5.46
+            }
+          }
+        },
+        "Luka Doncic": {
+          "2pt": {
+            "next_bucket_type_room_player_2_start_h1": {
+              "odd": 2.16
+            }
+          },
+          "3pt": {
+            "next_bucket_type_room_player_3_start_h1": {
+              "odd": 5.99
+            }
+          },
+          "ft": {
+            "next_bucket_type_room_player_1_start_h1": {
+              "odd": 4.1
+            }
+          },
+          "miss": {
+            "next_bucket_type_room_player_0_start_h1": {
+              "odd": 7.94
+            }
+          }
+        }
+      },
+      "3pt": {
+        "next_bucket_type_room_home_3": {
+          "odd": 4.39
+        }
+      },
+      "ft": {
+        "next_bucket_type_room_home_1": {
+          "odd": 5.85
+        }
+      },
+      "miss": {
+        "next_bucket_type_room_home_0": {
+          "odd": 500.0
+        }
+      }
+    }
+  },
+  "over_under_3pts": {
+    "FREEZE": "false",
+    "over": {
+      "0_5": {
+        "ou_0_5_made_three_pts_room_1": {
+          "odd": 1.01
+        }
+      },
+      "1_5": {
+        "ou_1_5_made_three_pts_room_1": {
+          "odd": 1.05
+        }
+      },
+      "2_5": {
+        "ou_2_5_made_three_pts_room_1": {
+          "odd": 1.15
+        }
+      },
+      "3_5": {
+        "ou_3_5_made_three_pts_room_1": {
+          "odd": 1.36
+        }
+      },
+      "4_5": {
+        "ou_4_5_made_three_pts_room_1": {
+          "odd": 1.68
+        }
+      },
+      "5_5": {
+        "ou_5_5_made_three_pts_room_1": {
+          "odd": 2.42
+        }
+      }
+    },
+    "under": {
+      "0_5": {
+        "ou_0_5_made_three_pts_room_0": {
+          "odd": 100.0
+        }
+      },
+      "1_5": {
+        "ou_1_5_made_three_pts_room_0": {
+          "odd": 20.83
+        }
+      },
+      "2_5": {
+        "ou_2_5_made_three_pts_room_0": {
+          "odd": 7.75
+        }
+      },
+      "3_5": {
+        "ou_3_5_made_three_pts_room_0": {
+          "odd": 3.77
+        }
+      },
+      "4_5": {
+        "ou_4_5_made_three_pts_room_0": {
+          "odd": 2.48
+        }
+      },
+      "5_5": {
+        "ou_5_5_made_three_pts_room_0": {
+          "odd": 1.71
+        }
+      }
+    }
+  },
+  "MINUTE": "0",
+  "SHOWODDS": "true",
+  "wdl": {
+    "FREEZE": "false",
+    "loss": {
+      "wdl_room_2": {
+        "odd": 1.18
+      }
+    },
+    "draw": {
+      "wdl_room_1": {
+        "odd": 20.0
+      }
+    },
+    "win": {
+      "wdl_room_0": {
+        "odd": 9.43
+      }
+    }
+  }
+}

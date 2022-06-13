@@ -1,0 +1,243 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h4, h5,
+h6,
+p {
+    margin: 0px;
+    color: white;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+p {
+    font-size: x-small;
+    color: white;
+}
+body {
+    margin: 0;
+}
+
+#mainbox {
+    background-color: #102131;
+    /* background-image: linear-gradient(hsl(240, 100%, 10%),
+            hsl(240, 100%, 25%)); */
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#imagebox {
+    background-image: url("https://static.wixstatic.com/media/6435b6_c1158f35dad54152afc81f10429b4ea5~mv2.png");
+    background-size: contain;
+}
+
+#logo{
+    height: 50px;
+    text-align: center;
+    float: right;
+    margin: 20px;
+    padding: 8px 10px 5px 10px;
+    color: white;
+    position: relative;
+}
+
+#icon {
+    margin: 20px;
+    padding: 8px 10px 5px 10px;
+    height: 50px;
+}
+
+#tagline {
+    margin-top: 0px;
+    color: black;
+}
+
+header {
+    /* #d8e8dc; */
+    display: inline-block;
+}
+
+section {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    margin: 0 20px 20px 20px;
+}
+
+.crest {
+    height: 25px;
+    width: 25px;
+    margin: 0 10px;
+}
+
+.teamname {
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#score {
+    margin: auto;
+}
+
+#scoreline {
+    margin: 10px 80px;
+    display: flex;
+}
+
+#scorelinewrapper {
+    display: inline-block;
+    width: 100%;
+    /* background-color: #293142; */
+    background-image: linear-gradient(90deg,
+       #fdb927 -10%, 
+       #293142 20%, 
+       #293142 80%,
+       #ce1141 110%);
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px black;
+    margin-bottom: 10px;
+}
+
+#stats {
+    display: flex;
+}
+
+#teaminfo {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#livestats {
+    width: 100%;
+    border-left: 2px solid hsl(0, 0%, 87%);
+    border-bottom: 2px solid hsl(0, 0%, 87%);
+    text-align: center;
+}
+
+.livestatsrow {
+    display: flex;
+    margin: 5px;
+}
+
+.livestatsrow .livestatname {
+    margin: 0 auto;
+}
+
+#livestats img {
+    width: 50%;
+    float: initial;
+}
+
+#time {
+    text-align: center;
+    margin: 0 0 auto 0;
+}
+
+#teaminfo h6 {
+    text-align: center;
+    margin: auto 0 0 0;
+}
+
+#teaminfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.playerrow {
+    display: flex;
+    padding: 5px;
+    border-bottom: 2px solid hsl(0, 0%, 87%);
+}
+
+.playerrow img {
+    width: 30px;
+    height: 30px;
+    background-color: #293142;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+.spacer {
+    width: 100%;
+}
+
+.playerdetails {
+    width: 100%;
+    margin: 0;
+}
+
+.playerdetails p {
+    text-align: center;
+}
+.wagerbutton {
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: #293142;
+    color: white;
+}
+#wagersubmit {
+    display: flex;
+}
+#wagerselector {
+    width: 100%;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 1px solid #3a465b;
+    background-color: #293142;
+}
+#betsubmit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px dashed #863EF6;
+}
+#betsubmit button {
+    height: 100%;
+    margin: -2px;
+    background-image: linear-gradient(90deg, 
+       hsl(278, 89%, 50%), 
+       #863EF6);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: medium;
+    padding: 0;
+    border-radius: 10px;
+}
+
+#betsubmit h4 {
+    height: 100%;
+    text-align: center;
+    position: relative;
+    top: 15%;
+}
+
+#betsubmit p {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    background-color: #b54b38;
+    top: 4px;
+    left: 4px;
+}
+
+bet-selector {
+    height: 100px;
+    color: white;
+    background-color: #102131;
+    font-size: 30px;
+    --box-color: #293142;
+    --text-highlight-color: #B16AF7;
+    --odds-font-size: 40px;
+}
