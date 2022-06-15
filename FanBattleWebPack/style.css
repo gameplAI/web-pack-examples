@@ -188,11 +188,12 @@ section {
     text-align: center;
 }
 .wagerbutton {
-    width: 25%;
+    width: calc(25% - 10px);
+    margin: 0 5px;
     border-radius: 0px;
     border: none;
     padding: 10px;
-    background-color: white;
+    background-color: hsl(0, 0, 95%);
     color: #1b1b1b;
 }
 #wagersubmit {
@@ -213,6 +214,7 @@ section {
     color: black;
     width: 100%;
     text-align: center;
+    margin-bottom: 10px;
 }
 #betsubmit {
     display: flex;
@@ -222,14 +224,12 @@ section {
 }
 #submitbutton {
     width: 100%;
-    margin: 0px;
-    margin-top: 5px;
+    margin: 5px 5px 0px;
     background-color: #40e776;
     color: rgba(0, 0, 0, 0.5);
     font-size: medium;
     padding: 5px;
     border: none;
-    border-radius: 5px;
 }
 
 #betsubmit h4 {
@@ -256,7 +256,7 @@ bet-selector {
     font-size: 30px;
     font-family: 'Electrolize';
     border-radius: 0px;
-    --box-color: white;
+    --box-color: hsl(0, 0, 95%);
     --text-highlight-color: #1493ff;
     --odds-font-size: 40px;
 }
