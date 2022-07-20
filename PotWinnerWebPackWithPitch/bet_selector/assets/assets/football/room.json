@@ -1,0 +1,40 @@
+{
+  "id": "60c9e929-9abc-4973-8f38-93cac99ddd33",
+  "games_in_room": {
+    "eaae1150-f9b8-4ac2-995f-baddb77fe3a1": {
+      "FREE KICKS HOME": 12,
+      "SHOTS ON TARGET AWAY": 7,
+      "BALL POSSESSION AWAY": 43,
+      "CORNERS HOME": 7,
+      "STATUS": "LIVE",
+      "SHOTS OFF TARGET AWAY": 0,
+      "matchdate": "2022-03-26 13:33:51.244834",
+      "CORNERS AWAY": 3,
+      "FREE KICKS AWAY": 6,
+      "GOALS HOME": 4,
+      "HOME TEAM": "ARS",
+      "MINUTE": 91,
+      "RED CARDS HOME": 0,
+      "GOALS AWAY": 2,
+      "AWAY TEAM": "LU",
+      "GAME ID": "eaae1150-f9b8-4ac2-995f-baddb77fe3a1",
+      "BALL LOCATION": [],
+      "YELLOW CARDS HOME": 0,
+      "EVENT MESSAGES": {
+        "75-90": {
+          "public": {}
+        }
+      },
+      "SHOTS OFF TARGET HOME": 3,
+      "BALL POSSESSION HOME": 57,
+      "YELLOW CARDS AWAY": 0,
+      "EXTRA TIME": 0,
+      "RED CARDS AWAY": 0,
+      "SHOTS ON TARGET HOME": 7,
+      "RESULT SO FAR": "WIN"
+    }
+  },
+  "room_mode": "Simulation",
+  "room_name": "75-90",
+  "isChallenge": false
+}
