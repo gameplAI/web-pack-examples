@@ -102,10 +102,11 @@ section {
     width: calc(100% - 40px);
     margin: 0px 20px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #stats {
-    display: flex;
+    /* display: flex; */
     margin: 0px 20px;
     background-color: white;
     border-radius: 10px;
@@ -271,7 +272,7 @@ bet-selector {
 }
 
 play-map {
-    height: 100px;
+    /* height: 100px; */
     color: #293142;
     --ball-color: #3fb4e5;
     font-size: 30px;
