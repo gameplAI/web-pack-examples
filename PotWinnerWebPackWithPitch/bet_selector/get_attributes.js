@@ -13,6 +13,13 @@ function getOnBetSelected(betId, optionId, odds, subOptionId, playerSelected) {
   }
 }
 
+function getOnBetUnselected(betId, optionId, odds, subOptionId, playerSelected) {
+  var fun = window.frameElement.parentElement.onBetUnselected;
+  if (fun) {
+    fun(betId, optionId, odds, subOptionId, playerSelected);
+  }
+}
+
 function getStyle() {
   return getComputedStyle(window.frameElement.parentElement);
 }

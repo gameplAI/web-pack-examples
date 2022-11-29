@@ -7,10 +7,34 @@ window.onload = () => {
     document.getElementById('betselector_away').key = params.key;
     document.getElementById('playmap').key = params.key;
 };
-document.getElementById('betselector').onBetSelected = (betId, optionId, odds, subOptionId, player) => {
+function onBetSelected(betId, optionId, odds, subOptionId, player) {
     currentodds = odds;
+    currentBetId = betId;
+    currentOptionId = optionId;
+    currentSubOptionId = subOptionId;
     checkSelections();
-}; 
+};
+function onBetUnselected(betId, optionId, odds, subOptionId, player) {
+    if (currentodds == odds && currentBetId == betId && currentOptionId == optionId && currentSubOptionId == subOptionId) {
+        currentodds = null;
+        currentBetId = null;
+        currentOptionId = null;
+        currentSubOptionId = null;
+    }
+    checkSelections();
+};
+document.getElementById('betselector_home').onBetSelected = (betId, optionId, odds, subOptionId, player) => {
+    console.log("Home bet selected");
+    onBetSelected(betId, optionId, odds, subOptionId, player);
+    document.getElementById('betselector_away').unselect();
+}
+document.getElementById('betselector_home').onBetUnselected = onBetUnselected;
+document.getElementById('betselector_away').onBetSelected = (betId, optionId, odds, subOptionId, player) => {
+    console.log("Away bet selected");
+    onBetSelected(betId, optionId, odds, subOptionId, player);
+    document.getElementById('betselector_home').unselect();
+}
+document.getElementById('betselector_away').onBetUnselected = onBetUnselected;
 let currentwager = '$2';
 let currentodds = null;
 let loading = false;
@@ -21,6 +45,9 @@ function checkSelections() {
         let odds = parseFloat(currentodds);
         let winnings = Math.round(wager * odds * 100) / 100;
         document.getElementById('submitbutton').innerText = 'Submit Bet ($' + winnings + ')';
+    } else {
+        document.getElementById('submitbutton').style.color = "rgba(255,255,255,0.5)";
+        document.getElementById('submitbutton').innerText = 'Submit';
     }
 }
 
@@ -68,6 +95,7 @@ async function submitBet() {
         await sleep();
         await sleep();
         await sleep();
+        button.style.color = "rgba(255,255,255,0.5)";
         button.innerText = 'Submit';
         currentodds = null;
         currentwager = null;

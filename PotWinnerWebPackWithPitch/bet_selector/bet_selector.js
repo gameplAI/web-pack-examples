@@ -60,6 +60,11 @@ class BetSelector extends HTMLElement {
       console.log('Attribute Changed Callback');
       this.children[1].contentWindow.onPropertyChange(name, oldValue, newValue);
     }
+
+    unselect() {
+      console.log("HTMLElement unselect");
+      this.children[1].contentWindow.unselect();
+    }
 }
 
 
