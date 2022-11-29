@@ -28,18 +28,19 @@ class PlayMap extends HTMLElement {
       this.setAttribute('key', newValue);
     }
 
+    get collection() {
+      return this.getAttribute('collection');
+    }
+
+    set collection(newValue) {
+      this.setAttribute('collection', newValue);
+    }
+
     static get observedAttributes(){
-        return ['gameid', 'key'];
+        return ['gameid', 'key', 'collection'];
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
-        console.log('Attribute changed callback');
-        console.log(name);
-        console.log(oldValue);
-        console.log(newValue);
-        console.log(this.children)
-        console.log(this.children[0])
-        console.log(this.children[1])
         this.children[1].contentWindow.onPropertyChange(name, oldValue, newValue);
     }
 }

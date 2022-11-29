@@ -28,6 +28,14 @@ class BetSelector extends HTMLElement {
       this.setAttribute('target', newValue);
     }
 
+    get oddstype() {
+      return this.getAttribute('oddstype');
+    }
+
+    set oddstype(newValue) {
+      this.setAttribute('oddstype', newValue);
+    }
+
     get key() {
       return this.getAttribute('key');
     }
@@ -36,8 +44,16 @@ class BetSelector extends HTMLElement {
       this.setAttribute('key', newValue);
     }
 
+    get collection() {
+      return this.getAttribute('collection');
+    }
+
+    set collection(newValue) {
+      this.setAttribute('collection', newValue);
+    }
+
     static get observedAttributes() {
-      return ['betid', 'target', 'key'];
+      return ['betid', 'target', 'key', 'oddstype', 'collection'];
     }
     
     attributeChangedCallback(name, oldValue, newValue) {

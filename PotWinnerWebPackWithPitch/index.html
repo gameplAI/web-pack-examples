@@ -13,7 +13,6 @@
                 <h1 id="iconpart2">WINNER</h1>
             </div>
             <section>
-                <article id='scorelinewrapper'>
                     <div id='scoreline'>
                         <img class="crest"
                             src="images/GSW.svg">
@@ -23,11 +22,14 @@
                         <img class="crest"
                             src="images/BOS.svg">
                     </div>
-                </article>
                 <article id="stats">
-                    <play-map id="playmap" gameid="28810038" height="250px" usestylesheets></play-map>
+                    <play-map 
+                    id="playmap"
+                    collection="Odds_BV"
+                    gameid="33294129" 
+                    height="250px" usestylesheets></play-map>
                 
-                    <!-- <div id="teaminfo">
+                    <div id="teaminfo">
                         <h6>Q4</h6>
                         <h1 id="time">11:52</h1>
                         <div class="playerrow">
@@ -91,8 +93,7 @@
                             <img src="images/Smart.png">
                         </div>
                     </div>
-                    <div id="livestats">
-                        <play-map id="playmap" gameid="28810038" height="150px" usestylesheets></play-map>
+                    <!-- <div id="livestats">
                         <div class="livestatsrow">
                             <p>7</p>
                             <p class="livestatname">3 Pointers</p>
@@ -118,18 +119,24 @@
                     </div> -->
                 </article>
                 <div id="betselectorwrapper">
-                    <div>
-                        <bet-selector
-                  id="betselector"
-                  gameid="33294129"
-                  betid="next_bucket"
-                  width="calc(100% - 40px)"
-                  height="200px"
-                  oddstype="moneyline"
-                  usestylesheets
-                  target="home"></bet-selector>
-                  <!-- <play-map id="playmap" gameid="28810038" usestylesheets></play-map> -->
-                </div>
+                    <bet-selector
+                     id="betselector_home"
+                     collection="Odds_BV"
+                     gameid="33294129"
+                     betid="next_bucket"
+                     height="200px"
+                     oddstype="moneyline"
+                     usestylesheets
+                     target="home"></bet-selector>
+                     <bet-selector
+                      id="betselector_away"
+                      collection="Odds_BV"
+                      gameid="33294129"
+                      betid="next_bucket"
+                      height="200px"
+                      oddstype="moneyline"
+                      usestylesheets
+                      target="away"></bet-selector>
                 </div>
                 <article id="wagersubmit">
                     <!-- <div id="betsubmit">
@@ -138,12 +145,12 @@
                     </div> -->
                     <div id="wagerselector">
                         <h1>Choose wager</h1>
-                    <button class="wagerbutton">$2</button>
-                    <button class="wagerbutton">$5</button>
-                    <button class="wagerbutton">$10</button>
-                    <button class="wagerbutton">$20</button>
-                    <button id="submitbutton" onclick="submitBet()">Submit Bet</button>
-                </div>
+                        <button class="wagerbutton">$2</button>
+                        <button class="wagerbutton">$5</button>
+                        <button class="wagerbutton">$10</button>
+                        <button class="wagerbutton">$20</button>
+                        <button id="submitbutton" onclick="submitBet()">Submit Bet</button>
+                    </div>
                 </article>
             </section>
         </div>

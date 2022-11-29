@@ -3,7 +3,8 @@ window.onload = () => {
     const params = Object.fromEntries(urlSearchParams.entries());
     console.log('load');
     console.log(params.key);
-    document.getElementById('betselector').key = params.key;
+    document.getElementById('betselector_home').key = params.key;
+    document.getElementById('betselector_away').key = params.key;
     document.getElementById('playmap').key = params.key;
 };
 document.getElementById('betselector').onBetSelected = (betId, optionId, odds, subOptionId, player) => {
