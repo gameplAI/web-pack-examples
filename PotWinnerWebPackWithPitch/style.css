@@ -257,16 +257,15 @@ section {
 
 bet-selector {
     flex: 1;
-    color: black;
     background-color: #f4f5f5;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Lato';
     margin: 0 20px;
     border-bottom: 4px solid #3fb4e5;
     border-radius: 0px;
     --box-color: white;
     --text-highlight-color: #41b6e6;
-    --odds-font-size: 40px;
+    --odds-font-size: 20px;
 }
 
 play-map {
@@ -278,4 +277,11 @@ play-map {
     --ball-color: #3fb4e5;
     font-size: 30px;
     font-family: 'Lato';
+}
+
+market-history {
+    width: 50%;
+    background-color: white;
+    font-family: 'Lato';
+    color: black;
 }

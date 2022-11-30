@@ -139,10 +139,12 @@
                       target="away"></bet-selector>
                 </div>
                 <article id="wagersubmit">
-                    <!-- <div id="betsubmit">
-                        <p>Winnings</p>
-                        <h4 id="winnings">$0</h4>
-                    </div> -->
+                    <market-history
+                    id="markethistory"
+                    collection="Odds_BV"
+                    usestylesheets
+                    gameid="33294129"
+                    betid="next_bucket"></market-history>
                     <div id="wagerselector">
                         <h1>Choose wager</h1>
                         <button class="wagerbutton">$2</button>
@@ -156,6 +158,7 @@
         </div>
         <script type="module" src="bet_selector/bet_selector.js"></script>
         <script type="module" src="play_map/play_map.js"></script>
+        <script type="module" src="market_history/market_history.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
