@@ -8,6 +8,7 @@ window.onload = () => {
     document.getElementById('playmap').key = params.key;
     document.getElementById('markethistory').key = params.key;
     document.getElementById('scoreline').key = params.key;
+    document.getElementById('gameclock').key = params.key;
 };
 function onBetSelected(betId, optionId, odds, subOptionId, player) {
     currentodds = odds;

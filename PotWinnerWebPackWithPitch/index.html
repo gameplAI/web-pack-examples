@@ -9,8 +9,10 @@
     <body>
         <div id="mainbox">
             <div id="icon">
-                <h1 id="iconpart1">BET</h1>
-                <h1 id="iconpart2">VICTOR</h1>
+                <img id="gplogo" src="images/Gameplai_Logo.png" height="45px">
+                <!-- <h1 id="iconpart1">BET</h1> -->
+                <!-- <h1 id="iconpart2">VICTOR</h1> -->
+                <!-- <button id="startbutton">Start Simulation</button> -->
             </div>
             <section>
                     <div id='scorelinewrapper'>
@@ -20,13 +22,6 @@
                             gameid="33294129"
                             usestylesheets
                         ></gp-scoreline>
-                        <!-- <img class="crest"
-                            src="images/GSW.svg">
-                        <h5 class="teamname">GSW</h5>
-                        <h5 id="score">75 - 74</h5>
-                        <h5 class="teamname">BOS</h5>
-                        <img class="crest"
-                            src="images/BOS.svg"> -->
                     </div>
                 <article id="stats">
                     <play-map 
@@ -36,8 +31,14 @@
                     height="250px" usestylesheets></play-map>
                 
                     <div id="teaminfo">
-                        <h6>Q4</h6>
-                        <h1 id="time">11:52</h1>
+                        <gp-game-clock
+                        id="gameclock"
+                        collection="Odds_BV"
+                        gameid="33294129"
+                        height="40px"
+                        usestylesheets></gp-game-clock>
+                        <!-- <h6>Q4</h6>
+                        <h1 id="time">11:52</h1> -->
                         <div class="playerrow">
                             <img src="images/Wiggins.png">
                             <div class="playerdetails">
@@ -164,6 +165,7 @@
         <script type="module" src="play_map/play_map.js"></script>
         <script type="module" src="market_history/market_history.js"></script>
         <script type="module" src="scoreline/scoreline.js"></script>
+        <script type="module" src="game_clock/game_clock.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
