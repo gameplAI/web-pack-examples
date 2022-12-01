@@ -13,14 +13,20 @@
                 <h1 id="iconpart2">VICTOR</h1>
             </div>
             <section>
-                    <div id='scoreline'>
-                        <img class="crest"
+                    <div id='scorelinewrapper'>
+                        <gp-scoreline
+                            id="scoreline"
+                            collection="Odds_BV"
+                            gameid="33294129"
+                            usestylesheets
+                        ></gp-scoreline>
+                        <!-- <img class="crest"
                             src="images/GSW.svg">
                         <h5 class="teamname">GSW</h5>
                         <h5 id="score">75 - 74</h5>
                         <h5 class="teamname">BOS</h5>
                         <img class="crest"
-                            src="images/BOS.svg">
+                            src="images/BOS.svg"> -->
                     </div>
                 <article id="stats">
                     <play-map 
@@ -157,6 +163,7 @@
         <script type="module" src="bet_selector/bet_selector.js"></script>
         <script type="module" src="play_map/play_map.js"></script>
         <script type="module" src="market_history/market_history.js"></script>
+        <script type="module" src="scoreline/scoreline.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

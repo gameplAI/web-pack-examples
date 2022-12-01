@@ -92,15 +92,11 @@ section {
     margin: auto;
 }
 
-#scoreline {
+#scorelinewrapper {
     width: 300px;
-    margin: 20px auto;
-    display: flex;
+    height: 60px;
+    margin: auto;
 }
-
-/* #scorelinewrapper {
-    display: block;
-} */
 
 #stats {
     display: flex;
@@ -284,4 +280,10 @@ market-history {
     background-color: white;
     font-family: 'Lato';
     color: black;
+}
+
+gp-scoreline {
+    color: black;
+    font-family: 'Lato';
+    font-size: 30px;
 }
