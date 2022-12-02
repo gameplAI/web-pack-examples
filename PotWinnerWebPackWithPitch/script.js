@@ -1,14 +1,12 @@
 window.onload = () => {
-    const urlSearchParams = new URLSearchParams(window.location.search);
-    const params = Object.fromEntries(urlSearchParams.entries());
-    console.log('load');
-    console.log(params.key);
-    document.getElementById('betselector_home').key = params.key;
-    document.getElementById('betselector_away').key = params.key;
-    document.getElementById('playmap').key = params.key;
-    document.getElementById('markethistory').key = params.key;
-    document.getElementById('scoreline').key = params.key;
-    document.getElementById('gameclock').key = params.key;
+    // const urlSearchParams = new URLSearchParams(window.location.search);
+    // const params = Object.fromEntries(urlSearchParams.entries());
+    // document.getElementById('betselector_home').key = params.key;
+    // document.getElementById('betselector_away').key = params.key;
+    // document.getElementById('playmap').key = params.key;
+    // document.getElementById('markethistory').key = params.key;
+    // document.getElementById('scoreline').key = params.key;
+    // document.getElementById('gameclock').key = params.key;
 };
 function onBetSelected(betId, optionId, odds, subOptionId, player) {
     currentodds = odds;
@@ -104,4 +102,21 @@ async function submitBet() {
         currentwager = null;
         loading = false;
     }
+}
+
+async function startSimulation() {
+    console.log("Start Simulation");
+    let button = document.getElementById("startbutton");
+    button.style.color = "rgba(255,255,255,0.5)";
+    button.innerText = "Starting...";
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "https://dev.api.gameplai.io/demo?key=LtlmVESdrRzHdMM3xD3x", true);
+    xhttp.send(null);
+    console.log("Request Sent");
+    await sleep();
+    await sleep();
+    await sleep();
+    await sleep();
+    button.style.color = "white";
+    button.innerText = "Start Simulation";
 }

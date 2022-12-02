@@ -10,19 +10,17 @@
         <div id="mainbox">
             <div id="icon">
                 <img id="gplogo" src="images/Gameplai_Logo.png" height="45px">
-                <!-- <h1 id="iconpart1">BET</h1> -->
-                <!-- <h1 id="iconpart2">VICTOR</h1> -->
-                <!-- <button id="startbutton">Start Simulation</button> -->
+                <button id="startbutton" onclick="startSimulation()">Start Game</button>
             </div>
             <section>
-                    <div id='scorelinewrapper'>
-                        <gp-scoreline
-                            id="scoreline"
-                            collection="Odds_BV"
-                            gameid="33294129"
-                            usestylesheets
-                        ></gp-scoreline>
-                    </div>
+                <div id='scorelinewrapper'>
+                    <gp-scoreline
+                        id="scoreline"
+                        collection="Odds_BV"
+                        gameid="33294129"
+                        usestylesheets
+                    ></gp-scoreline>
+                </div>
                 <article id="stats">
                     <play-map 
                     id="playmap"
