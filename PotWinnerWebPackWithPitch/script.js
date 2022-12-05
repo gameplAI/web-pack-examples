@@ -105,18 +105,16 @@ async function submitBet() {
 }
 
 async function startSimulation() {
-    console.log("Start Simulation");
     let button = document.getElementById("startbutton");
     button.style.color = "rgba(255,255,255,0.5)";
     button.innerText = "Starting...";
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "https://dev.api.gameplai.io/demo?key=LtlmVESdrRzHdMM3xD3x", true);
     xhttp.send(null);
-    console.log("Request Sent");
     await sleep();
     await sleep();
     await sleep();
     await sleep();
     button.style.color = "white";
-    button.innerText = "Start Simulation";
+    button.innerText = "Start Game";
 }
