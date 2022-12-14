@@ -1,0 +1,145 @@
+{
+  "data": [
+    {
+      "market_description": "away team's next basket will be a 2pt",
+      "freeze": false,
+      "game_details": {
+        "home_score": 123,
+        "home": {
+          "market": "home",
+          "alias": "PHX",
+          "id": "3416",
+          "name": "Suns"
+        },
+        "period_score_away": 25,
+        "away_score": 111,
+        "away": {
+          "market": "away",
+          "id": "3412",
+          "alias": "HOU",
+          "name": "Rockets"
+        },
+        "period": "4TH-Quarter",
+        "period_score_home": 30,
+        "clock": "00:00"
+      },
+      "bet_id": "f4f6c4b7-2f62-4566-826e-0f7dd399f61b",
+      "game_id": "28810038",
+      "market_type": "next_bucket",
+      "player_details": null,
+      "created": 1649460142683,
+      "id": "Suns_123_home_2pt",
+      "is_active": true,
+      "result": "undefined",
+      "status": "open",
+      "market_id": "home_2pt",
+      "fulfillment_score": 125,
+      "competition": {
+        "competition_id": 2202,
+        "season_id": 10,
+        "competition_description": "NBA 2021/22 Normal Season",
+        "sport": "NBA",
+        "season": "2021/2022"
+      },
+      "created_timestamp": "2022-04-08 23:22:22.682955",
+      "price": {
+        "moneyline": 1076
+      },
+      "modified": 1649460142683
+    },
+    {
+      "bet_id": "52faaea8-8f3a-4e65-8173-f3fa80ebe374",
+      "freeze": false,
+      "modified": 1649460142803,
+      "id": "Suns_123_home_3pt",
+      "created_timestamp": "2022-04-08 23:22:22.803059",
+      "player_details": null,
+      "status": "open",
+      "market_id": "home_3pt",
+      "price": {
+        "moneyline": 4445
+      },
+      "market_description": "away team's next basket will be a 3pt",
+      "competition": {
+        "competition_description": "NBA 2021/22 Normal Season",
+        "season_id": 10,
+        "sport": "NBA",
+        "competition_id": 2202,
+        "season": "2021/2022"
+      },
+      "is_active": true,
+      "created": 1649460142803,
+      "result": "undefined",
+      "fulfillment_score": 126,
+      "market_type": "next_bucket",
+      "game_details": {
+        "away": {
+          "market": "away",
+          "name": "Rockets",
+          "id": "3412",
+          "alias": "HOU"
+        },
+        "period": "4TH-Quarter",
+        "home": {
+          "id": "3416",
+          "market": "home",
+          "alias": "PHX",
+          "name": "Suns"
+        },
+        "home_score": 123,
+        "period_score_away": 25,
+        "period_score_home": 30,
+        "away_score": 111,
+        "clock": "00:00"
+      },
+      "game_id": "28810038"
+    },
+    {
+      "status": "open",
+      "result": "undefined",
+      "created_timestamp": "2022-04-08 23:22:22.557410",
+      "id": "Suns_123_home_ft",
+      "freeze": true,
+      "market_description": "home team's next basket will be a ft",
+      "market_id": "home_ft",
+      "fulfillment_score": 124,
+      "is_active": true,
+      "modified": 1649460142558,
+      "created": 1649460142557,
+      "game_details": {
+        "away": {
+          "market": "away",
+          "name": "Rockets",
+          "alias": "HOU",
+          "id": "3412"
+        },
+        "period": "4TH-Quarter",
+        "away_score": 111,
+        "period_score_away": 25,
+        "home_score": 123,
+        "period_score_home": 30,
+        "clock": "00:00",
+        "home": {
+          "name": "Suns",
+          "id": "3416",
+          "alias": "PHX",
+          "market": "home"
+        }
+      },
+      "competition": {
+        "season_id": 10,
+        "competition_description": "NBA 2021/22 Normal Season",
+        "sport": "NBA",
+        "competition_id": 2202,
+        "season": "2021/2022"
+      },
+      "market_type": "next_bucket",
+      "price": {
+        "moneyline": 346
+      },
+      "player_details": null,
+      "bet_id": "89ebc139-bb9e-428d-a7df-0202753d5165",
+      "game_id": "28810038"
+    }
+  ]
+}
