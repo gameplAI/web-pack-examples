@@ -278,6 +278,7 @@ bet-selector {
     border-radius: 0px;
     --box-color: white;
     --text-highlight-color: #41b6e6;
+    --text-player-color: #41b6e6;
     --odds-font-size: 20px;
 }
 
