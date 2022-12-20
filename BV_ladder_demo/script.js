@@ -109,7 +109,7 @@ async function startSimulation() {
     button.style.color = "rgba(255,255,255,0.5)";
     button.innerText = "Starting...";
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://dev.api.gameplai.io/demo?key=LtlmVESdrRzHdMM3xD3x", true);
+    xhttp.open("GET", "https://dev.api.gameplai.io/demo?key=YtlmvESdrWzHdMM3xD3y", true);
     xhttp.send(null);
     await sleep();
     await sleep();
