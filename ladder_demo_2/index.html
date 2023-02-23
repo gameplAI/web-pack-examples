@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="mainbox">
+            <div id="icon">
+                <img id="gplogo" src="images/Gameplai_Logo.png" height="45px">
+                <button id="startbutton" onclick="startSimulation()">Start Game</button>
+            </div>
+            <section>
+                <div id='scorelinewrapper'>
+                    <gp-scoreline
+                        id="scoreline"
+                        collection="Odds_NE2"
+                        gameid="33294129"
+                        usestylesheets
+                    ></gp-scoreline>
+                </div>
+                <article id="stats">
+                    <play-map 
+                    id="playmap"
+                    collection="Odds_NE2"
+                    gameid="33294129" 
+                    height="250px" usestylesheets></play-map>
+                
+                    <div id="teaminfo">
+                        <gp-game-clock
+                        id="gameclock"
+                        collection="Odds_NE2"
+                        gameid="33294129"
+                        height="40px"
+                        usestylesheets></gp-game-clock>
+                        <market-history
+                        id="markethistory"
+                        collection="Odds_NE2"
+                        usestylesheets
+                        gameid="33294129"
+                        height="170px"></market-history>
+                    </div>
+                </article>
+                <div id="marketswrapper">
+                    <div class="gap" width="100px" height="60px"><p>&nbsp;</p></div>
+                <gp-markets
+                id="markets"
+                collection="Price_Ladders_NE2"
+                gameid="33294129"
+                width="calc(100% - 40px)"
+                height="450px"></gp-markets>
+                <div class="gap" width="100px" height="60px"><p>&nbsp;</p></div>
+            </div>
+            </section>
+        </div>
+        <script type="module" src="bet_selector/bet_selector.js"></script>
+        <script type="module" src="play_map/play_map.js"></script>
+        <script type="module" src="market_history/market_history.js"></script>
+        <script type="module" src="scoreline/scoreline.js"></script>
+        <script type="module" src="game_clock/game_clock.js"></script>
+        <script type="module" src="markets/markets.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

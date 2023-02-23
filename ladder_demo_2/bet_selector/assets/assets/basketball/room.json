@@ -1,0 +1,30 @@
+{
+  "id": "dd73234b-72f0-4f13-86e0-2572b997d88d",
+  "games_in_room": {
+    "53543852-9b87-4890-98da-44e1995fd9b5": {
+      "SCORE AWAY": 90,
+      "FREE THROWS HOME": 16,
+      "AWAY TEAM": "LAL",
+      "GAME ID": "53543852-9b87-4890-98da-44e1995fd9b5",
+      "2PTS HOME": 22,
+      "BALL LOCATION": [],
+      "TOTAL FREE THROWS HOME": 21,
+      "FOULS AWAY": 18,
+      "3PTS HOME": 7,
+      "STATUS": "LIVE",
+      "matchdate": "2022-03-26 13:46:42",
+      "TOTAL FREE THROWS AWAY": 21,
+      "FREE THROWS AWAY": 15,
+      "2PTS AWAY": 27,
+      "HOME TEAM": "DAL",
+      "MINUTE": 0,
+      "SCORE HOME": 81,
+      "FOULS HOME": 15,
+      "3PTS AWAY": 7,
+      "RESULT SO FAR": "LOSS"
+    }
+  },
+  "room_mode": "NBASimulation",
+  "room_name": "4TH-Quarter",
+  "isChallenge": false
+}

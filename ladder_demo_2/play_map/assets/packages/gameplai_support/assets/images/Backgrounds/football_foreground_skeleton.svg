@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="115mm"
+   height="47mm"
+   viewBox="0 0 115 47"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="football_foreground_skeleton.svg"
+   inkscape:export-filename="C:\Users\Russe\Documents\Gameplai\Front-End\Design\Backgrounds\Grounds\FootballGround_skeleton.png"
+   inkscape:export-xdpi="441.73999"
+   inkscape:export-ydpi="441.73999">
+  <sodipodi:namedview
+     inkscape:snap-text-baseline="true"
+     inkscape:object-paths="true"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="252.90655"
+     inkscape:cy="137.67798"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-page="true"
+     inkscape:pagecheckerboard="true"
+     inkscape:snap-bbox="false"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:snap-grids="false"
+     inkscape:snap-to-guides="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-global="true"
+     units="mm"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true">
+    <sodipodi:guide
+       position="-565.93376,357.08511"
+       orientation="1,0"
+       id="guide874"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-554.93376,368.0751"
+       orientation="1,0"
+       id="guide878"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-482.93377,368.0751"
+       orientation="1,0"
+       id="guide951"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-471.93377,357.0851"
+       orientation="1,0"
+       id="guide953"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-560.43376,348.65522"
+       orientation="0,1"
+       id="guide1042"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-518.93376,348.65522"
+       orientation="1,0"
+       id="guide1260"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient9202"
+       inkscape:collect="always">
+      <stop
+         id="stop9198"
+         offset="0"
+         style="stop-color:#6105e4;stop-opacity:1" />
+      <stop
+         id="stop9200"
+         offset="1"
+         style="stop-color:#6105e4;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9202"
+       id="linearGradient9196"
+       x1="330.36969"
+       y1="509.8511"
+       x2="342.1701"
+       y2="508.72858"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-571.43375,-564.65522)">
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path870-1-2-8-6"
+       r="2.6243994"
+       cy="297"
+       cx="0"
+       d=""
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path870-1-2-8-3"
+       r="2.6243994"
+       cy="297"
+       cx="0"
+       d=""
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path870-1-2-8-8"
+       r="2.6243994"
+       cy="297"
+       cx="0"
+       d=""
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path870-1-2-8-9"
+       r="2.6243994"
+       cy="297"
+       cx="0"
+       d=""
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path870-1-2-8-7"
+       r="2.6243994"
+       cy="297"
+       cx="0"
+       d=""
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path870-1-2-8-75"
+       r="2.6243994"
+       cy="297"
+       cx="0"
+       d=""
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path870-1-2-8-85"
+       r="2.6243994"
+       cy="297"
+       cx="0"
+       d=""
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path870-1-2-8-82"
+       r="2.6243994"
+       cy="297"
+       cx="0"
+       d=""
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path870-1-2-8-72"
+       r="2.6243994"
+       cy="297"
+       cx="0"
+       d=""
+       inkscape:connector-curvature="0" />
+    <g
+       id="g2413"
+       transform="translate(1.1270408,0.04848457)" />
+    <path
+       inkscape:export-ydpi="360.45001"
+       inkscape:export-xdpi="360.45001"
+       inkscape:export-filename="C:\Users\Russe\OneDrive\Documents\Gameplai\Design\Pitch.png"
+       style="fill:none;stroke:#ffffff;stroke-width:0.69999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 581.82071,594.8916 v -4.47735 l 2.63455,-5.88423"
+       id="path2133-5-5-9-0-7-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       inkscape:export-ydpi="360.45001"
+       inkscape:export-xdpi="360.45001"
+       inkscape:export-filename="C:\Users\Russe\OneDrive\Documents\Gameplai\Design\Pitch.png"
+       style="fill:none;stroke:#ffffff;stroke-width:0.69999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 676.13344,594.89162 v -4.47735 l -2.63454,-5.88423"
+       id="path2133-5-5-8-6-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>
